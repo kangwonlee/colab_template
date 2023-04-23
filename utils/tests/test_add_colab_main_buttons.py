@@ -72,7 +72,7 @@ class TestAddColabMainButtons(unittest.TestCase):
         assert result.is_dir()
 
         assert (result/".gitignore").exists(), result
-        assert (result/"Ch02_Strain").exists() or (result/"00_introduction").exists(), result
+        assert (result/".git/").exists(), result
 
     def test_get_rel_path(self):
         result = acb.get_rel_path(self.with_button_full_path)
