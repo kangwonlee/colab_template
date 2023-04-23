@@ -1,2 +1,0 @@
-language = "python3"
-run = "pip install --upgrade pip && pip install --r requirements.txt && jupyter notebook --ip=0.0.0.0 --port=3000"
