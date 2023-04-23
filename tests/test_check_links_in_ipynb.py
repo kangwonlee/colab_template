@@ -1,10 +1,17 @@
 import os
+import pathlib
+import sys
 import urllib
 
 import pytest
 import requests
 
-from . import check_links_in_ipynb as cli
+sys.path.insert(
+    0,
+    str(pathlib.Path(__file__).parent.absolute())
+)
+
+import check_links_in_ipynb as cli
 
 
 # Find absolute path of the parent folder
